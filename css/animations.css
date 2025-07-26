@@ -1,0 +1,22 @@
+.card{
+    animation-name: slow-show;
+}
+.colored-bar{
+    animation-name: bars;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.card, .record, .employee-cards, .table-body p{
+    animation-name: slow-show;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes bars {
+    from{height: 0px;}
+}
+@keyframes slow-show {
+    from{opacity: 0;}
+}

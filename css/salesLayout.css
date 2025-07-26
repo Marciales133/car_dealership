@@ -1,0 +1,193 @@
+main{
+    container-type: inline-size;
+    display: grid;
+    grid-template-rows:max-content max-content 1fr auto;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.main-content{
+    display: grid;
+    grid-template-rows:max-content max-content 1fr;
+    gap: 1rem;
+    padding-inline: 3vw;
+}
+
+.boxes{
+    border: solid black;
+    background-color: rgb(200, 200, 200);
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3vw;
+}
+
+.nav-contents{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(max-content);
+    gap: 1rem;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: .5re5cqim;
+    padding-block: .3cqi;
+    gap: 1cqi;
+    height: 100%;
+}
+.search-bar input{
+    width: calc(100% - .5cqi - 1cqi);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+.search-bar input[type="search"] {
+  outline: none; /* removes the focus outline */
+}
+
+
+.droplist{
+    grid-template-rows: 1fr auto;
+    position: relative;
+}
+.custom-select{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: .5cqi;
+    padding-block: .2cqi;
+}
+.left{transform: rotateZ(-90deg);transition: all .5s ease;}
+.down{transform: rotateZ(0deg);}
+
+.custom-option{
+    margin-top: 0px;
+    position: absolute;
+    width:100%;
+    height:fit-content;
+    max-height: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(41, 41, 41);
+}
+
+.custom-option-body{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: calc((1.4*clamp(1rem, 0.95rem + 0.1vw, 1.125rem)+(2*.2cqi)+(2*.15cqi))*2);
+    border: solid black;;
+}
+.custom-option-body p{
+    line-height: 1.4;
+    cursor: pointer;
+    color: white;
+    padding-left:1cqi;
+    padding-block: .1cqi;
+    border: .15cqi solid rgb(76, 76, 76);
+    transition: all .2s ease;
+}
+.custom-option-body p:hover{
+    border: .15cqi solid rgb(156, 152, 152);
+}
+
+#salespersonOption{
+    transition: all .7s ease;
+    z-index: 7;
+}
+#timeOption{
+    transition: all .7s ease;
+    z-index: 6;
+}
+#progressOption{
+    transition: all .5s ease;
+    z-index: 5;
+}
+
+.show-progress{max-height: 75px;}
+.show-time{max-height: 130px;}
+.show-salespersons{max-height: 130px;}
+
+.color-complete{color: green;text-shadow: 1px 1px 1px black;}
+.color-inprogress{color: orange;text-shadow: 1px 1px 1px black;}
+.color-cancelled{color: red;text-shadow: 1px 1px 1px black;}
+.add, .add *{background-color: #32CD32 ; color: white;}
+.records{
+    display: grid;
+    grid-template-rows:repeat(max-content) ;
+    gap: .5rem;
+}
+.record i{font-size: clamp(.8rem, 0.75rem + 0.1vw, 1.125rem);padding-right: .2rem; color: #32CD32;text-shadow: 1px 1px 2px black;}
+.record span{opacity: .6;}
+.record p{
+    display:block;
+    border:.1cqi solid rgb(142, 142, 142);
+    padding-inline: 1cqi;
+    padding-block: .2cqi;
+    color: rgb(45, 44, 44);
+}
+.record{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    transition:all .2s ease;
+}
+
+@container (min-width: 480px) {
+    .nav-contents{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@container (min-width: 545px) {
+
+}
+/* MD - ≥768px */
+@container (min-width: 600px) {
+    .record{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@container (min-width: 722px) {
+
+}
+/* LG - ≥1024px */
+@container (min-width: 960px) {
+    .nav-contents{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@container (min-width: 1142px) {
+
+}
+/* XL - ≥1280px */
+@container (min-width: 1280px) {
+
+}
+@container (min-width: 1200px) {
+}
+/* 2K - ≥1440px */
+@container (min-width: 1440px) {
+
+}
+@container (min-width: 1565px) {
+    .record{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+/* 4K - ≥1920px */
+@container (min-width: 1920px) {
+
+}
+@container (min-width: 12029px) {
+
+}
+/* Beyond - ≥2500px */
+@container (min-width: 2500px) {
+
+}

@@ -1,0 +1,406 @@
+main{
+  container-type: inline-size;
+  display: grid;
+  grid-template-rows:auto max-content 1fr auto auto;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+
+
+.ISRC-container{
+  display: grid;
+  grid-template-rows: repeat(auto);
+  margin-inline: 3vw;
+  gap: 1rem;
+}
+.ISRC-boxes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(200, 200, 200);
+  border: .2vh solid black;
+  padding-block: 1vh;
+}
+.contain-this-part{
+  display: grid;
+  grid-template-rows: repeat(1fr);
+}
+.ST-LSA-NCTW-container{
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+}
+.stat-title{
+  grid-area:stat-title ;
+}
+.label-numbers{
+  grid-area:label-numbers ;
+  display: grid;
+  grid-template-rows: repeat(max-content);
+  align-items: last baseline;
+}
+.label-numbers p{
+  border-bottom: .2vh solid whitesmoke;
+}
+.stat-area{
+  grid-area:stat-area ;
+  background-color: rgb(235, 235, 235);
+  border-bottom: .2vh solid rgb(102, 141, 154);
+  border-right: .2vh solid rgb(102, 141, 154);
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.bars{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bar-spacer, .colored-bar{width: 100%;}
+.bar-spacer{flex: 1;}
+.colored-bar{height: 30%;box-shadow: 1px 1px 2px black; background-color: aqua;}
+.label-labels{
+  grid-area:label-labels ;
+  display: flex;
+  justify-content: space-around;
+}
+.blank{
+  grid-area:blank;
+}
+.sales-trend{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows:auto 7fr 1fr;
+  grid-template-areas: 
+  " stat-title stat-title"
+  "label-numbers stat-area"
+  "blank label-labels";
+  background-color: rgb(200, 200, 200);
+  border: .2vh solid black;
+  gap: .2rem;
+  padding: 1rem 1.5rem;
+}
+#salesTrend5th, #salesTrend4th, #salesTrend3th, #salesTrend2th{
+  background-color: rgb(0, 50, 0);
+}
+#salesTrend1th{
+  background-color: rgb(0, 100, 0);
+}
+
+
+
+.low-stock-alers{
+  background-color: rgb(200, 200, 200);
+  border: .2vh solid black;
+  padding-inline: .5rem;
+  padding-block: .5rem;
+}
+table{
+  width: 100%;
+}
+.year{
+  display: none;
+}
+
+.new-clients-this-week-client-name-container{
+  max-height: 150px;
+}
+.new-clients-this-week{
+  background-color: rgb(200, 200, 200);
+  border: .2vh solid black;
+  padding-inline: .5rem;
+  padding-block: .5rem;
+}
+.new-clients-this-week-client-name-container{
+  padding-inline: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.new-clients-this-week-client-name-container p::before{
+  content: "* ";
+  font-weight: bolder;
+}
+
+
+.top-selling-models{
+  background-color: rgb(200, 200, 200);
+  border: .2vh solid black;
+  padding-inline: .5rem;
+  padding-block: .5rem;
+}
+.top-3-cars-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1cqw;
+  margin-inline: 1rem;
+}
+.top-3-cars{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  height: auto;
+}
+.top-3-cars-img{
+  height:50px;
+  width: auto;
+  border-radius: 5px;
+}
+.texts-on-the-side{
+  text-align: center;
+}
+
+
+
+
+.pending-tasks{
+  background-color: rgb(200, 200, 200);
+  border: .2vh solid black;
+  padding-inline: .5rem;
+  padding-block: .5rem;
+  height: 170px;
+}
+.table-container,.table-head{
+  display: grid;
+  grid-template-rows: repeat(auto);
+  gap: .1rem;
+  width: 100%;
+  padding: .1rem;
+}
+.table-container{
+  border: solid black;
+  padding: .1rem;
+  background-color: rgb(100, 100, 100);
+}
+.table-head h4{
+  background-color: rgb(80, 80, 80);
+  border: solid black;
+  color: white;
+}
+.table-body {
+  height: 80px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(25px, 1fr) );
+  gap: .1rem;
+  
+}
+.table-body p{
+  border: solid black;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(200, 200, 200);
+  padding-block:.1rem ;
+  height: fit-content;
+  cursor: pointer;
+}
+.pending-tasks input{
+  width: 100%;
+  margin-top: .1rem;
+  border: solid black;
+  padding: .12rem;
+}
+.addPendingTask{
+  display: flex;
+  gap: .5rem;
+  margin-inline: 1rem;
+  align-items: baseline;
+}
+
+
+
+.contain-this-part{
+  display: grid;
+  grid-template-rows:1fr max-content;
+  gap: 1rem;
+  padding-inline: 3vw;
+}
+.ST-LSA-NCTW-container{
+  display: grid;
+  grid-template-rows:repeat(1fr);
+  gap: 1rem;
+}
+.TSM-PT-container{
+  display: grid;
+  grid-template-rows:repeat(auto);
+  gap: 1rem;
+}
+
+.fit-td{
+  width: 70px;
+}
+td{
+  padding-inline: .2rem;
+}
+thead{
+  background-color: rgb(75, 75, 75);
+}
+thead td{
+  color: white;
+}
+tbody{
+  background-color: rgb(200, 200, 200);
+}
+tbody td{
+  padding-block: .1rem;
+}
+table{
+  border: solid black;
+  background-color: rgb(102, 100, 100);
+}
+td{
+  border: solid rgb(55, 55, 55);
+  text-align: center;
+}
+/* SM - ≥480px */
+@container (min-width: 505px) {
+  .top-3-cars-img{
+    height:70px;
+  }
+  .ISRC-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .sales-trend{
+    grid-area:sales-trend ;
+  }
+  .low-stock-alers{
+    grid-area:low-stock-alers ;
+    margin-inline: 0;
+  }
+  .new-clients-this-week{
+    grid-area:new-clients-this-week ;
+  }
+  .ST-LSA-NCTW-container{
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:1fr min-content ;
+    grid-template-areas: 
+    "sales-trend sales-trend"
+    "low-stock-alers new-clients-this-week";
+  }
+}
+@container (min-width: 580px) {
+  .low-stock-alers-checkbox-container{
+    columns: 2;
+  }
+  .year{
+    display: inline-block;
+  }
+}
+/* MD - ≥768px */
+@container (min-width: 600px) {
+  .texts-on-the-side{
+    text-align: center;
+  }
+  .ISRC-container{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+  } 
+  .top-3-cars-container{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .top-3-cars{
+    flex-direction: column;
+  }
+}
+@container (min-width: 800px) {
+  .TSM-PT-container{
+    grid-template-columns:max-content 1fr;
+  }
+}
+/* LG - ≥1024px */
+@container (min-width: 960px) {
+  
+  .low-stock-alers-checkbox-container{
+    max-height: 230px;
+  }
+  .new-clients-this-week-client-name-container{
+    max-height: 150px;
+  }
+  .top-3-cars-container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .top-3-cars{
+    flex-direction: column;
+  }
+  .texts-on-the-side{
+    text-align: center;
+  }
+  .fit-td{
+  width: auto;
+}
+
+}
+/* XL - ≥1280px */
+@container (min-width: 1280px) {
+  .ST-LSA-NCTW-container{
+    grid-template-columns: 1fr max-content;
+    grid-template-rows:1fr max-content ;
+    grid-template-areas: 
+    "sales-trend low-stock-alers"
+    "sales-trend new-clients-this-week";
+  }
+  .low-stock-alers-checkbox-container{max-height: none;height: 90%;}
+}
+/* 2K - ≥1440px */
+@container (min-width: 1440px) {
+  .low-stock-alers-checkbox-container{
+    columns: 3;
+  }
+  .low-stock-alers-checkbox{
+    width: 90%;
+  }
+  .contain-this-part{
+    grid-template-columns:1fr max-content;
+  }
+  .ST-LSA-NCTW-container{
+    grid-template-columns: 1fr max-content;
+    grid-template-rows:1fr max-content ;
+    grid-template-areas: 
+    "sales-trend sales-trend"
+    "low-stock-alers new-clients-this-week";
+  }
+  .TSM-PT-container{
+    grid-template-columns: max-content;
+    grid-template-rows:1fr max-content;
+  }
+  .top-3-cars-container{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+  }
+  .top-3-cars{
+    flex-direction: row;
+  }
+  .top-3-cars-img{
+    height:120px;
+  }
+  .texts-on-the-side{
+    text-align: left;
+  }
+  .texts-on-the-side h6{font-size:2rem ;}
+  .texts-on-the-side p{font-size:1.5rem ;font-weight: 300;}
+  .ST-LSA-NCTW-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* 4K - ≥1920px */
+@container (min-width: 1920px) {
+  .top-3-cars-img{
+    height:140px;
+  }
+  .texts-on-the-side h6{font-size:2.5rem ;}
+  .texts-on-the-side p{font-size:2rem ;font-weight: 300;}
+  .new-clients-this-week-client-name-container{max-height: 220px;}
+  .low-stock-alers-checkbox-container{max-height: 220px;}
+}
+/* Beyond - ≥2500px */
+@container (min-width: 2500px) {
+  .top-3-cars-img{
+    height:250px;
+  }
+  .texts-on-the-side h6{font-size:4rem ;}
+  .texts-on-the-side p{font-size:3.5rem ;font-weight: 300;}
+}

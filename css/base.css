@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Lexend:wght@100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6, button{
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text-center{
+    text-align: center;
+}
+
+span{font-family: inherit;}
+
+header i, article i{font-size:	clamp(1rem, 1vw, 3rem);}
+nav button{font-size: clamp(1rem, 0.95rem + 0.3vw, 1.2rem);}
+.hidden-nav-bar button{font-size:	clamp(.7rem, 2.8vw, 3rem);}
+article h4{font-size: clamp(1rem, .8rem + 1.5vw, 1.9rem); color: rgb(190, 190, 190);}
+article span{font-size: clamp(.8rem, 0.7rem + 0.2vw, 1rem);}
+#menu1 i, #menu2 i{font-size:	clamp(1.5rem, 3vw, 6rem);}
+
+h1 {font-size: clamp(2rem, 1.5rem + .4vw, 3rem);}
+h2 {font-size: clamp(1.75rem, 1.4rem + 1vw, 2.25rem);}
+h3 {font-size: clamp(1.5rem, 1.2rem + .7vw, 1.75rem);}
+h4, select{font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);}
+h5, h6, thead {font-size: clamp(1rem, 0.95rem + 0.15vw, 1.2rem);}
+p, .main-btn, tbody ,input,.inner-span i, .title i,option ,div,.search-bar i{
+    font-size: clamp(.8rem, 0.75rem + 0.1vw, 1.125rem);
+}
+i{font-size:clamp(1.2rem, 4vw, 3rem);}
+/* .card p{font-size: clamp(.7rem, 0.8rem + 0.1vw, 1.125rem);} */
+.logo-div-container >h6,.logo-div-container >h3{color: orange;}
+
+article span{
+    display: flex;
+    align-items: last baseline;
+    gap: .5vw;
+    width: fit-content;
+    padding-bottom: .2vw;
+}
+main h4{text-align: center;}
+
+
+.label-numbers p{font-size: clamp(1rem, 0.95rem + 0.2vw, 2.125rem);}
+
+
+/* SM - ≥480px */
+@media (min-width: 480px) {
+
+}
+/* MD - ≥768px */
+@media (min-width: 768px) {
+
+}
+/* LG - ≥1024px */
+@media (min-width: 1024px) {
+
+}
+/* XL - ≥1280px */
+@media (min-width: 1280px) {
+    article button{font-size: clamp(1.1rem, 1rem + .8vw, 3rem);opacity: 0.75;}
+    header i, article i{font-size:	clamp(1.5rem, 1vw, 3rem);}
+}
+/* 2K - ≥1440px */
+@media (min-width: 1440px) {
+
+}
+/* 4K - ≥1920px */
+@media (min-width: 1920px) {
+
+}
+/* Beyond - ≥2500px */
+@media (min-width: 2500px) {
+    
+    .label-numbers p{font-size: clamp(2.3rem, 2.25rem + 0.1vw, 3.325rem);}
+    article button{font-size: clamp(1.1rem, 1rem + .8vw, 3rem);opacity: 1;}
+.logo-div-container h3{font-size: clamp(2.4rem, 1.3rem + 2.5vw, 6.9rem);}
+
+}
+
+@container (min-width: 2500px) {
+  article h4{font-size: clamp(2rem, 1.5rem + .7vw, 4rem); color: rgb(190, 190, 190);}
+    article span{font-size: clamp(1rem, 1rem + .2vw, 1.75rem);}
+    h1 {font-size: clamp(3rem, 2.5rem + .4vw, 5rem);}
+    h2 {font-size: clamp(2.75rem, 2.4rem + 1vw, 4.25rem);}
+    h3 {font-size: clamp(2.5rem, 2.2rem + .7vw, 3.75rem);}
+    h4 {font-size: clamp(2.25rem, 2.1rem + 0.5vw, 3.5rem);}
+    h5, h6, thead {font-size: clamp(2rem, 1.95rem + 0.15vw, 3.2rem);}
+    p, .main-btn, tbody ,input,.inner-span i, .search-bar i, .title i{font-size: clamp(2rem, 1.95rem + 0.1vw, 3.125rem);}
+}
